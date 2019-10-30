@@ -11,4 +11,6 @@ import scrapy
 class ZhihuTitleUrlItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    pass
+    title=scrapy.Field()
+    title_url=scrapy.Field()
+    voteup_count=scrapy.Field()
