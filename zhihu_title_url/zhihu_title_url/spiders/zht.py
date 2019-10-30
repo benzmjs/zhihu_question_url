@@ -25,7 +25,6 @@ class ZhtSpider(scrapy.Spider):
 
         if not json.loads(response.body.decode())["paging"]["is_end"]:
             next_url=json.loads(response.body.decode())["paging"]["next"]
-            print(next_url)
             yield scrapy.Request(
                 next_url,
                 callback=self.parse,
