@@ -102,7 +102,7 @@ MYSQL_TABLE = 'MYSQL库名'
 REDIS_HOST = 'REDIS服务器ip地址'
 REDIS_PORT = 6379
 REDIS_PASSWORD = 'REDIS密码'
-REDIS_DB = 'REDIS数据库号'
+REDIS_DB = '1'
 
 name = "scrapy-{}.log".format(time.strftime('%Y-%m-%d %H%M%S', time.localtime(time.time())))
 log_file_path = "log/scrapy-{}".format(name)
